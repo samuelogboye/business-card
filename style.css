@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(219, 204, 204);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  box-sizing: border-box;
+  background-color: rgb(134, 134, 212);
+  height: 800px;
+  width: 1700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid blue;
+}
+
+h3,
+h4,
+p {
+  justify-content: space-between;
+}
+
+img {
+  width: 600px;
+}
