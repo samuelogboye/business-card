@@ -6,27 +6,80 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f0f0f0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
   box-sizing: border-box;
-  background-color: rgb(134, 134, 212);
+  background-color: rgb(174, 192, 208);
   height: 800px;
   width: 1700px;
   display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 20px;
   padding: 20px;
-  border: 2px solid blue;
+  border: 2px;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
+  max-width: 1700px;
+  margin: 20px;
 }
 
-h3,
+.info {
+  flex: 1;
+  margin-left: 100px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+h3 {
+  font-size: 60px;
+  margin-top: 1px;
+}
+
 h4,
 p {
-  justify-content: space-between;
+  font-size: 60px;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
-img {
-  width: 600px;
+h4 {
+  font-weight: bold;
+  font-size: 60px;
+  margin: 30px 0 20px 160px;
+}
+
+.container .profile-img {
+  margin-left: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 650px;
+  border-radius: 10px;
+}
+
+.container .profile-img:hover {
+  animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
+.container .github-image {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 300px;
 }
